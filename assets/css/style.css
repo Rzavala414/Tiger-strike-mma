@@ -5,7 +5,16 @@ html{
 
 /* Header */
 header{
+    display: flex;
+}
 
+.logo img{
+    width: 140px;
+    height: 156px;
+}
+
+ul li{
+    display: inline-block;
 }
 
 /* Main */
