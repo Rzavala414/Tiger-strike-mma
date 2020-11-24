@@ -1,31 +1,90 @@
-/* Global selectors */
+/* Global variables */
 html{
+  
+}
 
+
+#programs img{
+    width: 358px;
+    height: 667px;
+}
+
+a{
+    text-decoration: none;
 }
 
 /* Header */
 header{
+   width: 100%; 
    
 }
 
 /* Nav */
 nav{
-
+    /* position: fixed;
+    z-index: 1; */
+    width: 100%;
+    height: 100px;
+    text-align: right;
+    vertical-align: middle;
+    flex-grow: 1;
+    background: blue;
 }
 
-.logo img{
+nav span{
+    margin: 0 8px
+}
+
+.logo{
     width: 140px;
     height: 156px;
+    position: absolute;
+    top: 7px;
+    left: 130px;
 }
 
+/* Hero */
+.hero{
+    height: 500px;
+    width: 100%;
+    background-image: url("https://i.pinimg.com/originals/33/88/a4/3388a496e4fec44885ee6dcc8996ab72.jpg");
+    background-repeat: no-repeat;
+}
 
 /* Main */
 main{
-
+    
+    width: 75%;
+    height: 2400px;
+    margin: 25px auto;
+    /* display: grid;
+    grid-template: repeat(15, 1fr) / repeat(11, 1fr);  */
+    top: 100px;
 }
 
 /* Program Section */
+#programs{
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+}
 
+.kickboxing{
+    grid-column-start: 1;
+    grid-column-end: span 4;
+}
+
+.j{
+    grid-column-start: 5;
+    grid-column-end: 8;
+    
+}
+
+.boxing{
+    grid-column-start: 9;
+    grid-column-end: 13;
+}
 
 /* About Section */
 
@@ -34,7 +93,10 @@ main{
 
 /* Footer */
 footer{
-
+  
+    background: black;
+    width: 100%;
+    height: 100px;
 }
 
 /* Media queries */
