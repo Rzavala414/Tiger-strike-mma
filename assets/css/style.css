@@ -13,6 +13,9 @@ a{
     text-decoration: none;
 }
 
+a:hover{
+    color: red;
+}
 /* Header */
 header{
    width: 100%; 
@@ -48,42 +51,52 @@ nav span{
     height: 500px;
     width: 100%;
     background-image: url("https://i.pinimg.com/originals/33/88/a4/3388a496e4fec44885ee6dcc8996ab72.jpg");
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
 }
 
 /* Main */
 main{
-    
-    width: 75%;
-    height: 2400px;
-    margin: 25px auto;
-    /* display: grid;
-    grid-template: repeat(15, 1fr) / repeat(11, 1fr);  */
     top: 100px;
 }
 
 /* Program Section */
 #programs{
-    display: grid;
-    grid-gap: 5px;
-    grid-template-columns: repeat(11, 1fr);
-    grid-template-rows: repeat(1, 1fr);
+    margin-top: 35px;
+  display: grid;
+  grid-template-columns: 358px 358px 358px;
+  grid-template-rows: 50px 667px;
+  grid-gap: 20px;
+  grid-template-areas: "cap1 cap2 cap3"
+                       "kickboxing jiujitsu boxing";
+  justify-content: center;
+  align-items: center;
+    
+}
+.cap1, .cap2, .cap3{
+    font-size: 2em;
+    text-align: center;
+}
+
+.cap1{
+    grid-area: cap1;
+}
+.cap2{
+    grid-area: cap2;
+}
+.cap3{
+    grid-area: cap3;
 }
 
 .kickboxing{
-    grid-column-start: 1;
-    grid-column-end: span 4;
-}
-
-.j{
-    grid-column-start: 5;
-    grid-column-end: 8;
-    
+    grid-area: kickboxing;
 }
 
 .boxing{
-    grid-column-start: 9;
-    grid-column-end: 13;
+    grid-area: boxing;
+}
+
+.jiujitsu{
+    grid-area: jiujitsu;
 }
 
 /* About Section */
