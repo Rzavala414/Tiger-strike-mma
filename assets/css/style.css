@@ -3,6 +3,7 @@ body{
   background-color: #222222;
   text-align: center;
   font-family: 'Lato', sans-serif;
+  color:white;
 }
 
 
@@ -54,9 +55,22 @@ span{
 
 /* Hero */
 .hero{
-    height: 500px;
-    width: 100%;
+    padding: 428px 350px;
+    background-size: cover;
+    background-repeat: no-repeat;
     background-image: url("https://i.pinimg.com/originals/33/88/a4/3388a496e4fec44885ee6dcc8996ab72.jpg");
+
+}
+
+.hero h1{
+    font-size: 50px;
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    position: absolute;
+    top:580px;
+    left: 545px;
 }
 
 /* Main */
