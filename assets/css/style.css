@@ -1,6 +1,7 @@
 /* Global variables */
 body{
   background-color: darkgray;
+  text-align: center;
 }
 
 
@@ -16,24 +17,30 @@ a{
 
 /* Header */
 header{
-   width: 100%; 
-   
+    width: 100%;
+    height: 69px;
+    position: fixed;
+    /* border-bottom: 1px solid seashell; */
+    align-items: center;
+    /* background: black; */
+    z-index: 1;
 }
-
+.flex-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 /* Nav */
 nav{
-    /* position: fixed;
-    z-index: 1; */
-    width: 100%;
-    height: 100px;
     text-align: right;
-    vertical-align: middle;
     flex-grow: 1;
-    
+    background-color: darkgray;
+    height: 70px;
 }
 
-nav span{
-    margin: 0 8px
+span{
+    margin: 0 8px;
+    
 }
 
 .logo{
@@ -109,7 +116,22 @@ main{
 }
 
 /* About Section */
+#about{
+    width: 100%;
+    margin: 50px 0;
+    
+}
 
+#about p{
+  font-size: 30px;
+  padding: 25px;
+  width: 50%;
+  margin: 0 auto;
+  line-height: 35px;
+  /* opacity: 0.6; */
+  font-weight: 600;
+  background: rgba(189, 19, 0, 0.767);
+}
 
 /* Contact Section */
 
