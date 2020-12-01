@@ -1,6 +1,6 @@
 /* Global variables */
 body{
-  background-color: darkgray;
+  background-color: #222222;
   text-align: center;
 }
 
@@ -20,9 +20,7 @@ header{
     width: 100%;
     height: 69px;
     position: fixed;
-    /* border-bottom: 1px solid seashell; */
     align-items: center;
-    /* background: black; */
     z-index: 1;
 }
 .flex-container{
@@ -30,12 +28,13 @@ header{
     justify-content: center;
     flex-wrap: wrap;
 }
+
 /* Nav */
 nav{
     text-align: right;
     flex-grow: 1;
-    background-color: darkgray;
-    height: 70px;
+    background-color: #333333;
+    height: 100px;
 }
 
 span{
@@ -56,17 +55,17 @@ span{
     height: 500px;
     width: 100%;
     background-image: url("https://i.pinimg.com/originals/33/88/a4/3388a496e4fec44885ee6dcc8996ab72.jpg");
-    /* background-repeat: no-repeat; */
 }
 
 /* Main */
 main{
+    position: relative;
     top: 100px;
 }
 
 /* Program Section */
 #programs{
-    margin-top: 35px;
+  margin-top: 35px;
   display: grid;
   grid-template-columns: 358px 358px 358px;
   grid-template-rows: 50px 667px;
@@ -84,6 +83,7 @@ main{
     letter-spacing: 2px;
     font-size: 2em;
     text-align: center;
+    color: seashell;
 }
 
 .cap1{
@@ -116,13 +116,12 @@ main{
 }
 
 /* About Section */
-#about{
+#mission{
     width: 100%;
-    margin: 50px 0;
-    
+    margin: 50px 0;    
 }
 
-#about p{
+#mission p{
   font-size: 30px;
   padding: 25px;
   width: 50%;
@@ -134,13 +133,45 @@ main{
 }
 
 /* Contact Section */
+#contact{
+    display: grid;
+    grid-template-columns: 358px 358px 358px;
+    grid-template-rows: 556px;
+    grid-gap: 20px;
+    grid-template-areas: "info map form";
+    justify-content: center;
+    align-items: center;
+    background: #333333;
+}
+
+.business-info{
+    grid-area: info;
+    line-height: 40px;
+    text-align: left;
+    color: white;
+    font-weight: 600;
+    
+    font-size: 18px;
+}
+
+.map{
+    grid-area: map;
+    margin: 0 auto;
+    height: 362px;
+    width: 362px; 
+}
+
+form{
+    grid-area: form;
+}
 
 /* Footer */
 footer{
-  
     background: black;
     width: 100%;
     height: 100px;
+    position: relative;
+    top: 121px;
 }
 
 /* Media queries */
